@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// ---- MOSTRAR MENU -----
+// ---- MOSTRAR MENU ----- //
 
 void mostrarMenu()
 {
@@ -60,7 +60,9 @@ void seleccionarOpcion()
 
 }
 
-// ----- OPCIONES ----
+// ----- OPCIONES ---- //
+
+// Cada función llamaría a otra que se encarga de realizar lo pedido, por el momento solo tiene un cout para corroborar que funciona. //
 
 void jugar()
 {

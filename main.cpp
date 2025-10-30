@@ -1,5 +1,5 @@
 #include <iostream>
-#include <windows.h> // Libreria d
+#include <windows.h> // Libreria de Windows para que funcione las funciones de codificación. //
 #include "menu.h"
 
 using namespace std;
