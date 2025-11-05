@@ -26,3 +26,165 @@
 	<iostream>
 	"menu.h"
 
+1761868927 source:c:\users\user\desktop\nosoupforyou-main\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<windows.h>
+	"menu.h"
+
+1761871745 c:\users\user\desktop\nosoupforyou-main\menu.h
+
+1761872367 source:c:\users\user\desktop\nosoupforyou-main\menu.cpp
+	<iostream>
+	<windows.h>
+	"menu.h"
+	<ctime>
+	"juego.cpp"
+
+1761869103 source:c:\users\user\desktop\nosoupforyou-main\juego.cpp
+	<iostream>
+	<windows.h>
+	"menu.h"
+
+1761869103 c:\users\user\desktop\nosoupforyou-main\juego.cpp
+	<iostream>
+	<windows.h>
+	"menu.h"
+
+1761868927 source:c:\users\leone\desktop\nosoupforyou-main\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<windows.h>
+	"menu.h"
+
+1762215103 c:\users\leone\desktop\nosoupforyou-main\menu.h
+
+1762213934 source:c:\users\leone\desktop\nosoupforyou-main\menu.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"menu.h"
+
+1761869103 c:\users\leone\desktop\nosoupforyou-main\juego.cpp
+	<iostream>
+	<windows.h>
+	"menu.h"
+
+1762213205 source:c:\users\leone\desktop\nosoupforyou-main\funciones.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"menu.h"
+
+1762260452 source:c:\users\ahora gym\desktop\nosoupforyou-main\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<windows.h>
+	"funciones.h"
+
+1762260308 c:\users\ahora gym\desktop\nosoupforyou-main\menu.h
+
+1762262084 source:c:\users\ahora gym\desktop\nosoupforyou-main\juego.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"funciones.h"
+
+1762261219 source:c:\users\ahora gym\desktop\nosoupforyou-main\menu.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"funciones.h"
+
+1762260452 source:c:\users\ahora gym\desktop\nosoupforyou-main\combinaciones.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"funciones.h"
+
+1762259343 source:c:\users\ahora gym\desktop\nosoupforyou-main\funciones.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"menu.h"
+
+1762260452 c:\users\ahora gym\desktop\nosoupforyou-main\funciones.h
+
+1762260452 source:c:\users\ahora gym\desktop\nosoupforyou-main - copia\combinaciones.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"funciones.h"
+
+1762264601 c:\users\ahora gym\desktop\nosoupforyou-main - copia\funciones.h
+
+1762260452 source:c:\users\ahora gym\desktop\nosoupforyou-main - copia\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<windows.h>
+	"funciones.h"
+
+1762262305 source:c:\users\ahora gym\desktop\nosoupforyou-main - copia\menu.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"funciones.h"
+
+1762264601 source:c:\users\ahora gym\desktop\nosoupforyou-main - copia\dados.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"funciones.h"
+
+1762290011 source:c:\users\leone\desktop\nosoupforyou\combinaciones.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"funciones.h"
+
+1762246600 c:\users\leone\desktop\nosoupforyou\funciones.h
+
+1762246600 source:c:\users\leone\desktop\nosoupforyou\dados.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"funciones.h"
+
+1762290011 source:c:\users\leone\desktop\nosoupforyou\juego.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"funciones.h"
+
+1762290011 source:c:\users\leone\desktop\nosoupforyou\menu.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"funciones.h"
+
+1762290011 source:c:\users\leone\desktop\nosoupforyou\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<windows.h>
+	"funciones.h"
+
+1762299297 source:c:\users\leone\desktop\nosoupforyou - copia\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<windows.h>
+	"funciones.h"
+
+1762299297 c:\users\leone\desktop\nosoupforyou - copia\funciones.h
+
+1762299151 source:c:\users\leone\desktop\nosoupforyou - copia\menu.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"funciones.h"
+

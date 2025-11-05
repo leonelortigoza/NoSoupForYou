@@ -1,85 +1,116 @@
 #include <iostream>
 #include <windows.h>
-#include "menu.h"
+#include <ctime>
+#include "funciones.h"
 
 using namespace std;
 
-// ---- MOSTRAR MENU ----- //
+// ---- MOSTRAR MENU -----
 
 void mostrarMenu()
 {
-    cout << "============================" << endl;
-    cout << "||   ¡NO SOUP FOUR YOU!   ||" << endl;
-    cout << "============================" << endl;
-
-    cout << endl;
-
-    cout << "1 - JUGAR" << endl;
-    cout << "2 - ESTADÍSTICAS" << endl;
-    cout << "3 - CRÉDITOS" << endl;
-    cout << "0 - SALIR" << endl;
-
-    cout << endl;
-}
-
-void seleccionarOpcion()
-{
-    // INGRESO DE OPCIÓN
     int opcion;
 
-    cout << "INGRESE UNA OPCION: ";
+    do
+    {
+        cout << "============================" << endl;
+        cout << "||   ¡NO SOUP FOUR YOU!   ||" << endl;
+        cout << "============================" << endl;
 
-    cin >> opcion;
+        cout << endl;
 
-    cout << endl;
+        cout << "1 - JUGAR" << endl;
+        cout << "2 - ESTADÍSTICAS" << endl;
+        cout << "3 - CRÉDITOS" << endl;
+        cout << "0 - SALIR" << endl;
 
-    // SE PROCESA LA OPCIÓN A TRAVÉS DE UN SWITCH
+        cout << endl;
+        cout << endl;
+
+        cout << "SELECCIONAR OPCIÓN: ";
+        cin >> opcion;
+
+        cout << endl;
+
+        seleccionarOpcion(opcion);
+
+    }
+    while (opcion !=0);
+
+}
+
+// ---- SELECCIONAR OPCIÓN -----
+
+void seleccionarOpcion(int opcion)
+{
+
+    string definicion; // Guarda la respuesta del usuario por si quiere continuar (SI o NO)
+    string vectorNombreJugador[2]; // Vector donde guardamos los jugadores (2 jugadores)
+    int vectorPuntosTotales[2] = {}; // Vector donde guardamos la cantidad de puntos de cada jugador, comienza inicializada en 0
+    int vectorConfianza[2] = {300, 300}; // Vector para la confianza de cada jugador
+    string vectorJugadorActual[2]; // vector para mostrar que jugador está jugando actualmente
+    int vectorRondaJugador[2]; // Guardar y mostrar el total de rondas
+    int vectorPuntosRonda[2]; // Guardar y mostrar el total de puntos ganados en la ronda
+    int vectorLanzamientos[2]; // Guardar y mostrar la cantidad de lanzamientos de dados
+    int contadorLanzamiento;   // Contar cuantos lanzamientos realizó el jugador
+
 
     switch(opcion)
     {
-        case 1:
-            jugar();
-            break;
+    case 1:
+        system("cls");
 
-        case 2:
-            estadisticas();
-            break;
+        jugar(vectorNombreJugador);
 
-        case 3:
-            creditos();
-            break;
+        cout << endl << "Confirmar Nombres?: (S/N)" << endl;
 
-        case 0:
-            salir();
-            break;
+        cin >> definicion;
 
-        default:
-            cout << "OPCIÓN INCORRECTA" << endl;
-            return;
+        cout << endl;
+
+        if (definicion == "S")
+        {
+
+            pantallaJuego(vectorNombreJugador, vectorPuntosTotales, vectorConfianza, vectorJugadorActual, vectorRondaJugador, vectorPuntosRonda,vectorLanzamientos,contadorLanzamiento);
+
+        }
+
+        break;
+
+    case 2:
+        ;
+        break;
+
+    case 3:
+        ;
+        break;
+
+    case 0:
+        ;
+        break;
+
+    default:
+        cout << "OPCIÓN INCORRECTA" << endl;
+        return;
     }
 
 }
 
-// ----- OPCIONES ---- //
+// ----- SELECCIONAR JUGADORES ----
 
-// Cada función llamaría a otra que se encarga de realizar lo pedido, por el momento solo tiene un cout para corroborar que funciona. //
-
-void jugar()
+void jugar(string vectorNombreJugador[])
 {
-    cout << "COMENZAR JUEGO" << endl;
+
+    system ("cls");
+
+    cout << "INGRESE EL NOMBRE DEL JUGADOR N°1: " <<endl;
+    cin >> vectorNombreJugador[0];
+
+    cout << "INGRESE EL NOMBRE DEL JUGADOR N°2: " <<endl;
+    cin >> vectorNombreJugador[1];
+
 }
 
-void estadisticas()
-{
-    cout << "MOSTRAR ESTADÍSTICAS" << endl;
-}
 
-void creditos()
-{
-    cout << "MOSTRAR CRÉDITOS" << endl;
-}
 
-void salir()
-{
-    cout << "SALIR DEL JUEGO" << endl;
-}
+
