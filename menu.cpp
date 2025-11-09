@@ -5,7 +5,7 @@
 
 using namespace std;
 
-// ---- MOSTRAR MENU -----
+/// ---- MOSTRAR MENU -----
 
 void mostrarMenu()
 {
@@ -13,15 +13,17 @@ void mostrarMenu()
 
     do
     {
-        cout << "============================" << endl;
-        cout << "||   ¡NO SOUP FOUR YOU!   ||" << endl;
-        cout << "============================" << endl;
+
+        cout << "+--------------------------+" << endl;
+        cout << "|    ¡NO SOUP FOUR YOU!    |" << endl;
+        cout << "+--------------------------+" << endl;
 
         cout << endl;
 
         cout << "1 - JUGAR" << endl;
         cout << "2 - ESTADÍSTICAS" << endl;
         cout << "3 - CRÉDITOS" << endl;
+        cout << "4 - MODO DE PRUEBA" << endl;
         cout << "0 - SALIR" << endl;
 
         cout << endl;
@@ -39,77 +41,76 @@ void mostrarMenu()
 
 }
 
-// ---- SELECCIONAR OPCIÓN -----
+/// ---- SELECCIONAR OPCIÓN -----
 
 void seleccionarOpcion(int opcion)
 {
 
-    string definicion; // Guarda la respuesta del usuario por si quiere continuar (SI o NO)
-    string vectorNombreJugador[2]; // Vector donde guardamos los jugadores (2 jugadores)
-    int vectorPuntosTotales[2] = {}; // Vector donde guardamos la cantidad de puntos de cada jugador, comienza inicializada en 0
-    int vectorConfianza[2] = {300, 300}; // Vector para la confianza de cada jugador
-    string vectorJugadorActual[2]; // vector para mostrar que jugador está jugando actualmente
-    int vectorRondaJugador[2]; // Guardar y mostrar el total de rondas
-    int vectorPuntosRonda[2]; // Guardar y mostrar el total de puntos ganados en la ronda
-    int vectorLanzamientos[2]; // Guardar y mostrar la cantidad de lanzamientos de dados
-    int contadorLanzamiento;   // Contar cuantos lanzamientos realizó el jugador
+    string definicion;
 
+    string vectorNombreJugador[2];
+
+    bool preguntarNombresDeNuevo = false;
 
     switch(opcion)
     {
-    case 1:
-        system("cls");
+        case 1:
 
-        jugar(vectorNombreJugador);
+            do
+            {
 
-        cout << endl << "Confirmar Nombres?: (S/N)" << endl;
+                system("cls");
 
-        cin >> definicion;
+                jugar(vectorNombreJugador);
 
-        cout << endl;
+                cout << endl << "¿Confirmar Nombres? (S/N):" << endl;
 
-        if (definicion == "S")
-        {
+                cout << endl;
 
-            pantallaJuego(vectorNombreJugador, vectorPuntosTotales, vectorConfianza, vectorJugadorActual, vectorRondaJugador, vectorPuntosRonda,vectorLanzamientos,contadorLanzamiento);
+                cin >> definicion;
 
-        }
+                cout << endl;
 
-        break;
+                if(definicion == "S")
+                {
 
-    case 2:
-        ;
-        break;
+                    system("cls");
 
-    case 3:
-        ;
-        break;
+                    asignarQuienComienzaRonda(vectorNombreJugador);
 
-    case 0:
-        ;
-        break;
+                }
+                else
+                {
 
-    default:
-        cout << "OPCIÓN INCORRECTA" << endl;
-        return;
+                    preguntarNombresDeNuevo = true;
+
+                }
+
+            } while(preguntarNombresDeNuevo);
+
+            break;
+
+        case 2:
+            break;
+
+        case 3:
+            break;
+
+        case 0:
+            break;
+
+        default:
+            cout << "OPCIÓN INCORRECTA" << endl;
+
+            return;
     }
 
 }
 
-// ----- SELECCIONAR JUGADORES ----
 
-void jugar(string vectorNombreJugador[])
-{
 
-    system ("cls");
 
-    cout << "INGRESE EL NOMBRE DEL JUGADOR N°1: " <<endl;
-    cin >> vectorNombreJugador[0];
 
-    cout << "INGRESE EL NOMBRE DEL JUGADOR N°2: " <<endl;
-    cin >> vectorNombreJugador[1];
-
-}
 
 
 
